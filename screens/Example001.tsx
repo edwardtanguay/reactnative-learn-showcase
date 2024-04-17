@@ -4,7 +4,7 @@ import { ColorBox } from "../components/ColorBox";
 import { Ex001FlatList } from "../components/Ex001FlatList";
 import { useRoute } from "@react-navigation/native";
 
-export const StylesAndFlatList = () => {
+export const Example001 = () => {
 	const route: any = useRoute();
 	const idCode:string = route.params ? route.params.idCode : "UNKNOWN";
 	const colors: string[] = route.params ? route.params.colors : [];
