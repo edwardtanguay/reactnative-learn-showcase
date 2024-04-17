@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "reactnative-learn-showcase",
-    "slug": "reactnative-learn-showcase",
+    "name": "Edward's React Native Showcase",
+    "slug": "react-native-showcase",
+    "description": "This is a test app for React Native Expo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +22,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.edwardtanguay.reactnativeshowcase"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a8e24865-1dfd-4422-8fff-0d3183cae816"
+      }
+    },
+    "owner": "edwardtanguay"
   }
 }
