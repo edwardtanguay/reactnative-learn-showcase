@@ -6,7 +6,7 @@ const frameworks = ["React", "Next.js", "SvelteKit", "Nuxt", "Angular"];
 export const Ex001FlatList = () => {
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>Frameworks: </Text>
+			<Text style={styles.title}>Ex001FlatList: </Text>
 			<FlatList
 				data={frameworks}
 				keyExtractor={item => item}
