@@ -5,12 +5,20 @@ interface IProps {
 	navigation: any;
 }
 
-const colors = [
+const blueColors = [
 	"lightblue",
 	"skyblue",
 	"cornflowerblue",
 	"dodgerblue",
 	"steelblue",
+];
+
+const orangeColors = [
+	"orange",
+	"darkorange",
+	"coral",
+	"tomato",
+	"orangered",
 ];
 
 export const Home = ({ navigation }: IProps) => {
@@ -20,7 +28,7 @@ export const Home = ({ navigation }: IProps) => {
 				onPress={() => {
 					navigation.navigate("Styles and Flat List", {
 						idCode: "blue",
-						colors,
+						colors: blueColors,
 					});
 				}}
 			>
@@ -30,7 +38,7 @@ export const Home = ({ navigation }: IProps) => {
 				onPress={() => {
 					navigation.navigate("Styles and Flat List", {
 						idCode: "orange",
-						colors,
+						colors: orangeColors,
 					});
 				}}
 			>
