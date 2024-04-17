@@ -5,19 +5,23 @@ interface IProps {
 	navigation: any;
 }
 
+const colors = ['blue', 'steelblue', 'skyblue', 'dodgerblue', 'cornflowerblue', ]
+
 export const Home = ({ navigation }: IProps) => {
 	return (
 		<View>
 			<TouchableOpacity onPress={() => {
 				navigation.navigate('Styles and Flat List', {
-					color: 'blue'
+					idCode: 'blue', 
+					colors
 				});
 			}}>
 				<Text style={styles.link}>Example page 001 with blue</Text>
 			</TouchableOpacity>
 			<TouchableOpacity onPress={() => {
 				navigation.navigate('Styles and Flat List', {
-					color: 'orange'
+					idCode: 'orange', 
+					colors
 				});
 			}}>
 				<Text style={styles.link}>Example page 001 with orange</Text>

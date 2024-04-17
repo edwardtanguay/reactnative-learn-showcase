@@ -10,7 +10,8 @@ export const StylesAndFlatList = () => {
 	return (
 		<SafeAreaView style={{ flex: 1 }}>
 			<View style={styles.container}>
-				<Text style={styles.text}>Here are some {route.params?.color} styles:</Text>
+				<Text style={styles.text}>Here are some {route.params?.idCode} styles:</Text>
+				<Text>nnn</Text>
 				<View style={[styles.box, styles.box1]}>
 					<Text>Box 1</Text>
 				</View>
