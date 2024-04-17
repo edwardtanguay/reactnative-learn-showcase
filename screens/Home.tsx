@@ -8,6 +8,7 @@ interface IProps {
 const blueColors = [
 	"lightblue",
 	"skyblue",
+	"#7fa5e3",
 	"cornflowerblue",
 	"dodgerblue",
 	"steelblue",
@@ -32,7 +33,7 @@ export const Home = ({ navigation }: IProps) => {
 					});
 				}}
 			>
-				<Text style={styles.link}>Example page 001 with blue</Text>
+				<Text style={styles.link}>Example 001 with blue</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
 				onPress={() => {
@@ -42,7 +43,14 @@ export const Home = ({ navigation }: IProps) => {
 					});
 				}}
 			>
-				<Text style={styles.link}>Example page 001 with orange</Text>
+				<Text style={styles.link}>Example 001 with orange</Text>
+			</TouchableOpacity>
+			<TouchableOpacity
+				onPress={() => {
+					navigation.navigate("Flat List");
+				}}
+			>
+				<Text style={styles.link}>Example 002 with Flat List</Text>
 			</TouchableOpacity>
 		</View>
 	);
@@ -50,7 +58,8 @@ export const Home = ({ navigation }: IProps) => {
 
 const styles = StyleSheet.create({
 	link: {
-		marginTop: 10,
-		marginLeft: 10,
+		marginTop: 15,
+		marginLeft: 15,
+		fontSize: 18
 	},
 });

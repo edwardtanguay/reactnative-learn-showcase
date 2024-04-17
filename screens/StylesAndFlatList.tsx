@@ -12,8 +12,7 @@ export const StylesAndFlatList = () => {
 	return (
 		<SafeAreaView style={{ flex: 1 }}>
 			<View style={styles.container}>
-				<Text style={styles.text}>Here are some {idCode} styles:</Text>
-				<Text>There are {route.params?.colors.length} colors.</Text>
+				<Text style={styles.text}>Here are {colors.length} {idCode} colors:</Text>
 				<ColorBox text="Box 4" backgroundColor={colors[0]} />
 				<ColorBox text="Box 4" backgroundColor={colors[1]} />
 				<ColorBox text="Box 4" backgroundColor={colors[2]} />
