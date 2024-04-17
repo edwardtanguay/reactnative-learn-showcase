@@ -12,8 +12,8 @@ const App = () => {
 		<NavigationContainer>
 			<Stack.Navigator>
 				<Stack.Screen name="Home" component={Home} />
-				<Stack.Screen name="Styles and Flat List" component={Ex001Colors} />
-				<Stack.Screen name="Flat List" component={Ex002FlatList} />
+				<Stack.Screen name="Ex001Colors" component={Ex001Colors} />
+				<Stack.Screen name="Ex002FlatList" component={Ex002FlatList} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);

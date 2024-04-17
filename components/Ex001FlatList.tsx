@@ -6,11 +6,10 @@ const frameworks = ["React", "Next.js", "SvelteKit", "Nuxt", "Angular"];
 export const Ex001FlatList = () => {
 	return (
 			<View style={styles.container}>
-				<Text style={styles.title}>Ex001FlatList: </Text>
 				<FlatList
 					data={frameworks}
 					keyExtractor={(item) => item}
-					renderItem={(data) => <Text>{data.item}</Text>}
+					renderItem={(data) => <Text style={styles.item}>{data.item}</Text>}
 				></FlatList>
 			</View>
 	);
@@ -20,7 +19,7 @@ const styles = StyleSheet.create({
 	container: {
 		marginTop: 20,
 	},
-	title: {
-		fontWeight: "bold",
+	item: {
+		fontSize: 22
 	},
 });

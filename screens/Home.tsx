@@ -27,7 +27,7 @@ export const Home = ({ navigation }: IProps) => {
 		<View>
 			<TouchableOpacity
 				onPress={() => {
-					navigation.navigate("Styles and Flat List", {
+					navigation.navigate("Ex001Colors", {
 						idCode: "blue",
 						colors: blueColors,
 					});
@@ -37,7 +37,7 @@ export const Home = ({ navigation }: IProps) => {
 			</TouchableOpacity>
 			<TouchableOpacity
 				onPress={() => {
-					navigation.navigate("Styles and Flat List", {
+					navigation.navigate("Ex001Colors", {
 						idCode: "orange",
 						colors: orangeColors,
 					});
@@ -47,7 +47,7 @@ export const Home = ({ navigation }: IProps) => {
 			</TouchableOpacity>
 			<TouchableOpacity
 				onPress={() => {
-					navigation.navigate("Flat List");
+					navigation.navigate("Ex002FlatList");
 				}}
 			>
 				<Text style={styles.link}>Example 002 with Flat List</Text>

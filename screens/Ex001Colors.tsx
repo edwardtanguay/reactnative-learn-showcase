@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, SafeAreaView, StyleSheet } from "react-native";
 import { ColorBox } from "../components/ColorBox";
-import { Ex001FlatList } from "../components/Ex001FlatList";
 import { useRoute } from "@react-navigation/native";
 
 export const Ex001Colors= () => {
@@ -18,7 +17,6 @@ export const Ex001Colors= () => {
 				<ColorBox text="Box 4" backgroundColor={colors[2]} />
 				<ColorBox text="Box 4" backgroundColor={colors[3]} />
 				<ColorBox text="Box 5" backgroundColor={colors[4]} />
-				<Ex001FlatList />
 			</View>
 		</SafeAreaView>
 	);
