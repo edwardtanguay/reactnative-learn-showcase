@@ -33,7 +33,7 @@ export const Home = ({ navigation }: IProps) => {
 					});
 				}}
 			>
-				<Text style={styles.link}>Example 001 with blue</Text>
+				<Text style={styles.link}>Ex001Colors with blue</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
 				onPress={() => {
@@ -43,14 +43,14 @@ export const Home = ({ navigation }: IProps) => {
 					});
 				}}
 			>
-				<Text style={styles.link}>Example 001 with orange</Text>
+				<Text style={styles.link}>Ex001Colors with orange</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
 				onPress={() => {
 					navigation.navigate("Ex002FlatList");
 				}}
 			>
-				<Text style={styles.link}>Example 002 with Flat List</Text>
+				<Text style={styles.link}>Ex002FlatList</Text>
 			</TouchableOpacity>
 		</View>
 	);
