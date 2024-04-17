@@ -4,7 +4,6 @@ import {
 	Text,
 	SafeAreaView,
 	StyleSheet,
-	KeyboardAvoidingView,
 } from "react-native";
 import { ColorBox } from "./components/ColorBox";
 
@@ -22,7 +21,8 @@ const App = () => {
 				<View style={[styles.box, styles.box3]}>
 					<Text style={styles.box3text}>Box 3</Text>
 				</View>
-				<ColorBox/>
+				<ColorBox text="Box 4" backgroundColor="goldenrod"/>
+				<ColorBox text="Box 5" backgroundColor="tomato"/>
 			</View>
 		</SafeAreaView>
 	);
