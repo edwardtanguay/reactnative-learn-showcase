@@ -6,6 +6,7 @@ import {
 	StyleSheet,
 } from "react-native";
 import { ColorBox } from "./components/ColorBox";
+import { Ex001FlatList } from "./components/Ex001FlatList";
 
 const App = () => {
 	return (
@@ -23,6 +24,7 @@ const App = () => {
 				</View>
 				<ColorBox text="Box 4" backgroundColor="goldenrod"/>
 				<ColorBox text="Box 5" backgroundColor="tomato"/>
+				<Ex001FlatList/>
 			</View>
 		</SafeAreaView>
 	);
@@ -39,7 +41,7 @@ const styles = StyleSheet.create({
 		borderColor: "navy",
 		borderWidth: 2,
 		alignItems: "center",
-		justifyContent: "center",
+		justifyContent: "flex-start",
 		flex: 1,
 	},
 	text: {
