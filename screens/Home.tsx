@@ -11,7 +11,7 @@ export const Home = ({ navigation }: IProps) => {
 			<TouchableOpacity onPress={() => {
 				navigation.navigate('Styles and Flat List');
 			}}>
-				<Text style={styles.link}>View color areas</Text>
+				<Text style={styles.link}>View Styles and Flat List</Text>
 			</TouchableOpacity>
 		</View>
 	);
