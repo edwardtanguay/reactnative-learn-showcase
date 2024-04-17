@@ -5,7 +5,7 @@ This is a showcase site that I created while taking a [course on React Native](h
 - repo: https://github.com/edwardtanguay/reactnative-learn-showcase
 - live: https://reactnative-learn-showcase.vercel.app
 
-![grafik](https://github.com/edwardtanguay/reactnative-learn-showcase/assets/446574/ba504913-6ca6-4253-9542-0e567f7e428b)
+![grafik](https://github.com/edwardtanguay/reactnative-learn-showcase/assets/446574/434f614b-a44d-4085-981b-688035ef3443)
 
 ## setup and start
 
