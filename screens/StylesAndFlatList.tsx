@@ -2,12 +2,15 @@ import React from "react";
 import { View, Text, SafeAreaView, StyleSheet } from "react-native";
 import { ColorBox } from "../components/ColorBox";
 import { Ex001FlatList } from "../components/Ex001FlatList";
+import { useRoute } from '@react-navigation/native';
 
 export const StylesAndFlatList = () => {
+	const route:any = useRoute();
+
 	return (
 		<SafeAreaView style={{ flex: 1 }}>
 			<View style={styles.container}>
-				<Text style={styles.text}>Here are some styles:</Text>
+				<Text style={styles.text}>Here are some {route.params?.color} styles:</Text>
 				<View style={[styles.box, styles.box1]}>
 					<Text>Box 1</Text>
 				</View>

@@ -9,9 +9,18 @@ export const Home = ({ navigation }: IProps) => {
 	return (
 		<View>
 			<TouchableOpacity onPress={() => {
-				navigation.navigate('Styles and Flat List');
+				navigation.navigate('Styles and Flat List', {
+					color: 'blue'
+				});
 			}}>
-				<Text style={styles.link}>View Styles and Flat List</Text>
+				<Text style={styles.link}>Example page 001 with blue</Text>
+			</TouchableOpacity>
+			<TouchableOpacity onPress={() => {
+				navigation.navigate('Styles and Flat List', {
+					color: 'orange'
+				});
+			}}>
+				<Text style={styles.link}>Example page 001 with orange</Text>
 			</TouchableOpacity>
 		</View>
 	);
