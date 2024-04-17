@@ -3,7 +3,7 @@ import { View, Text, SafeAreaView, StyleSheet } from "react-native";
 import { ColorBox } from "../components/ColorBox";
 import { Ex001FlatList } from "../components/Ex001FlatList";
 
-export const ColorPalette = () => {
+export const StylesAndFlatList = () => {
 	return (
 		<SafeAreaView style={{ flex: 1 }}>
 			<View style={styles.container}>
