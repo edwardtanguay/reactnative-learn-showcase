@@ -1,32 +1,22 @@
 import React from "react";
-import {
-	View,
-	Text,
-	SafeAreaView,
-	StyleSheet,
-} from "react-native";
+import { View, Text, SafeAreaView, StyleSheet } from "react-native";
 import { ColorBox } from "./components/ColorBox";
 import { Ex001FlatList } from "./components/Ex001FlatList";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { ColorPalette } from "./screens/ColorPalette";
+import { Home } from "./screens/Home";
+
+const Stack = createStackNavigator();
 
 const App = () => {
 	return (
-		<SafeAreaView style={{ flex: 1 }}>
-			<View style={styles.container}>
-				<Text style={styles.text}>Here are some styles:</Text>
-				<View style={[styles.box, styles.box1]}>
-					<Text>Box 1</Text>
-				</View>
-				<View style={[styles.box, styles.box2]}>
-					<Text>Box 2</Text>
-				</View>
-				<View style={[styles.box, styles.box3]}>
-					<Text style={styles.box3text}>Box 3</Text>
-				</View>
-				<ColorBox text="Box 4" backgroundColor="goldenrod"/>
-				<ColorBox text="Box 5" backgroundColor="tomato"/>
-				<Ex001FlatList/>
-			</View>
-		</SafeAreaView>
+		<NavigationContainer>
+			<Stack.Navigator>
+				<Stack.Screen name="Home" component={Home} />
+				<Stack.Screen name="ColorPalette" component={ColorPalette} />
+			</Stack.Navigator>
+		</NavigationContainer>
 	);
 };
 
@@ -54,7 +44,7 @@ const styles = StyleSheet.create({
 		padding: 10,
 		borderRadius: 5,
 		borderWidth: 2,
-		borderColor: '#555'
+		borderColor: "#555",
 	},
 	box1: {
 		backgroundColor: "teal",
@@ -63,11 +53,11 @@ const styles = StyleSheet.create({
 		backgroundColor: "darkorange",
 	},
 	box3: {
-		backgroundColor: "navy"
+		backgroundColor: "navy",
 	},
 	box3text: {
-		color: '#ddd'
-	}
+		color: "#ddd",
+	},
 });
 
 export default App;
