@@ -14,17 +14,11 @@ export const StylesAndFlatList = () => {
 			<View style={styles.container}>
 				<Text style={styles.text}>Here are some {idCode} styles:</Text>
 				<Text>There are {route.params?.colors.length} colors.</Text>
-				<View style={[styles.box, styles.box1]}>
-					<Text>Box 1</Text>
-				</View>
-				<View style={[styles.box, styles.box2]}>
-					<Text>Box 2</Text>
-				</View>
-				<View style={[styles.box, styles.box3]}>
-					<Text style={styles.box3text}>Box 3</Text>
-				</View>
-				<ColorBox text="Box 4" backgroundColor="goldenrod" />
-				<ColorBox text="Box 5" backgroundColor="tomato" />
+				<ColorBox text="Box 4" backgroundColor={colors[0]} />
+				<ColorBox text="Box 4" backgroundColor={colors[1]} />
+				<ColorBox text="Box 4" backgroundColor={colors[2]} />
+				<ColorBox text="Box 4" backgroundColor={colors[3]} />
+				<ColorBox text="Box 5" backgroundColor={colors[4]} />
 				<Ex001FlatList />
 			</View>
 		</SafeAreaView>

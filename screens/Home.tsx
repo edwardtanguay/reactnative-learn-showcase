@@ -5,25 +5,35 @@ interface IProps {
 	navigation: any;
 }
 
-const colors = ['blue', 'steelblue', 'skyblue', 'dodgerblue', 'cornflowerblue', ]
+const colors = [
+	"lightblue",
+	"skyblue",
+	"cornflowerblue",
+	"dodgerblue",
+	"steelblue",
+];
 
 export const Home = ({ navigation }: IProps) => {
 	return (
 		<View>
-			<TouchableOpacity onPress={() => {
-				navigation.navigate('Styles and Flat List', {
-					idCode: 'blue', 
-					colors
-				});
-			}}>
+			<TouchableOpacity
+				onPress={() => {
+					navigation.navigate("Styles and Flat List", {
+						idCode: "blue",
+						colors,
+					});
+				}}
+			>
 				<Text style={styles.link}>Example page 001 with blue</Text>
 			</TouchableOpacity>
-			<TouchableOpacity onPress={() => {
-				navigation.navigate('Styles and Flat List', {
-					idCode: 'orange', 
-					colors
-				});
-			}}>
+			<TouchableOpacity
+				onPress={() => {
+					navigation.navigate("Styles and Flat List", {
+						idCode: "orange",
+						colors,
+					});
+				}}
+			>
 				<Text style={styles.link}>Example page 001 with orange</Text>
 			</TouchableOpacity>
 		</View>
@@ -33,6 +43,6 @@ export const Home = ({ navigation }: IProps) => {
 const styles = StyleSheet.create({
 	link: {
 		marginTop: 10,
-		marginLeft: 10
-	}
-})
+		marginLeft: 10,
+	},
+});
