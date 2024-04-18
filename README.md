@@ -21,6 +21,6 @@ This is a showcase site that I created while taking a [course on React Native](h
 
 - on computer, install **Android Studio**, see notes above
 
-# more learning starters :computer:
+# :computer: more learning starters 
 
 - https://tanguay-eu.vercel.app/starters
