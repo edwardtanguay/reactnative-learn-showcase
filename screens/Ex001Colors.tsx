@@ -12,9 +12,9 @@ export const Ex001Colors= () => {
 		<SafeAreaView style={{ flex: 1 }}>
 			<View style={styles.container}>
 				<Text style={styles.text}>Here are {colors.length} {idCode} colors:</Text>
-				<ColorBox text="Box 4" backgroundColor={colors[0]} />
-				<ColorBox text="Box 4" backgroundColor={colors[1]} />
-				<ColorBox text="Box 4" backgroundColor={colors[2]} />
+				<ColorBox text="Box 1" backgroundColor={colors[0]} />
+				<ColorBox text="Box 2" backgroundColor={colors[1]} />
+				<ColorBox text="Box 3" backgroundColor={colors[2]} />
 				<ColorBox text="Box 4" backgroundColor={colors[3]} />
 				<ColorBox text="Box 5" backgroundColor={colors[4]} />
 			</View>

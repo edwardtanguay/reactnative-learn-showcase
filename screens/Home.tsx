@@ -8,7 +8,6 @@ interface IProps {
 const blueColors = [
 	"lightblue",
 	"skyblue",
-	"#7fa5e3",
 	"cornflowerblue",
 	"dodgerblue",
 	"steelblue",
